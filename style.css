@@ -1,0 +1,275 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button:focus {
+  outline: none;
+}
+
+ul, li {
+  padding: 0;
+  margin: 0;
+}
+
+.content {
+  width: 1170px;
+  margin: 0 auto;
+} 
+
+.header { 
+  background: url("/img/header-bg.jpg") no-repeat center top/cover; 
+  font-family: 'Anton', sans-serif;
+  text-transform: uppercase;
+  height: 900px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 57px;
+}
+
+.logo {
+  margin-right: 70px;
+}
+
+.menu {
+  display: flex;
+  letter-spacing: 0.1em;
+}
+
+ul li {
+  list-style-type: none;
+  display: inline-block;
+  margin-right: 20px;
+}
+
+.header a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.tel {
+  margin-left: auto;
+  letter-spacing: 0.1em;
+}
+
+.offer {
+  color: #fff;
+  letter-spacing: 0.1em;
+  margin-top: 216px;
+}
+
+.offer p {
+  font-size: 44px;
+}
+
+.offer h1 {
+  font-size: 147px;
+}
+
+.offer a {
+  line-height: 1em;
+  margin: 5em auto;
+  display: block;
+  font-size: 20px;
+  width: 290px;
+  height: 57px;
+  border: 1px solid #fff;
+  letter-spacing: 0.1em;
+  text-align: center;
+  padding: 17px 47px;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+/*main*/
+
+.main h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 50px;
+  margin-top: 113px;
+}
+
+.description {
+  display: flex;
+  justify-content: space-between;
+}
+.description h3 {
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
+  margin-top: 58px;
+}
+
+.description p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  text-align: justify;
+  line-height: 1.62em;
+}
+
+.descr-left, .descr-right {
+  width: 564px;
+}
+
+.gallery {
+  margin-top: 67px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer p {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 15px;
+  margin: 80px 0;
+}
+
+.menu-open {
+  display: none;
+}
+
+.header .show-menu {
+  display: flex;
+  position: absolute;
+  background: rgba(0,0,0,0.4);
+  left: 0;
+  top: 0; 
+  width: 50%;
+  padding: 40px 20px 20px 40px;
+}
+
+@media screen and (max-width: 1200px) {
+  .content { 
+    width: 1140px;
+  }
+  .descr-left, .descr-right {
+    width: 48%;
+  }
+  .gallery img:nth-child(1) {
+    width: 23%;
+  }
+  .gallery img:nth-child(2) {
+    width: 23%;
+  }
+  .gallery img:nth-child(3) {
+    width: 48%;
+  }
+  .menu-open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1199px) {
+  .content { 
+    width: 960px;
+  }
+
+  .menu-open {
+    display: none;
+  }
+
+  .show-menu {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+  }
+  .show-menu li {
+    margin: 10px;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .content { 
+    width: 720px;
+  }
+  .offer h1 {
+    font-size: 120px;
+  }
+  .btn {
+    margin: 6em auto;
+  }
+  .menu-open {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .content {
+    width: 540px;
+  }
+
+  .menu {
+    display: none;
+  }
+  
+  .menu-open  {
+    background: none;
+    border: none;
+    display: block;
+    width: 50px;
+    margin-left: 10px;
+    cursor: pointer;
+  }
+  .menu-open  {
+    background: none;
+    border: none;
+    display: block;
+    width: 30px;
+    margin-left: 20px;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .content {
+    width: 100%;
+    padding: 0 15px;
+  }
+  .menu { 
+    display: none;
+  }
+  .offer h1 {
+    font-size: 90px;
+    line-height: 1em;
+  }
+  .gallery p {
+    font-size: 40px;
+  }
+  .offer a {
+    margin: 0 auto;
+    margin-top: 6em;
+  }
+  .description {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+  .offer p {
+    font-size: 28px;
+  }
+  .descr-left, .descr-right {
+    width: 96%;
+  }
+  .gallery img:nth-child(1),
+  .gallery img:nth-child(2),
+  .gallery img:nth-child(3) {
+    width: 100%;
+    margin-bottom: 20px ;
+  }
+  .gallery {
+    flex-wrap: wrap;
+  }
+  .menu-open  {
+    background: none;
+    border: none;
+    display: block;
+    width: 30px;
+    margin-left: 20px;
+  }
+} 
